@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc.js\"  name=\"2.操作説明－クレーン操作\" url=\"Topics/02-1.htm\"><book name=\"クレーンを管理する（対象クレーン）\" url=\"Topics/02-1.htm#TOC__管理_対象bc-1\" src=\"toc6.js\" /><book name=\"クレーンを操作する\" url=\"Topics/02-2.htm\" src=\"toc7.js\" /><item name=\"吊荷を設定する（資材詳細）\" url=\"Topics/02-3.htm\" /></data>";

@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"book","name":"はじめに","key":"toc1","url":"Topics/00-1.htm"},{"type":"book","name":"1.事前準備","key":"toc2","url":"Topics/01-1.htm"},{"type":"book","name":"2.操作説明－クレーン操作","key":"toc5","url":"Topics/02-1.htm"},{"type":"book","name":"3. 操作説明－案件情報","key":"toc8","url":"Topics/03.htm"},{"type":"book","name":"4.操作説明－クレーン検索","key":"toc9","url":"Topics/04.htm"},{"type":"book","name":"5.操作説明－タスク管理","key":"toc11","url":"Topics/05-1.htm"},{"type":"book","name":"6. 困ったときには","key":"toc14","url":"Topics/06-1.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

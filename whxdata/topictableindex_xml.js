@@ -1,0 +1,1 @@
+gXMLBuffer="<?xml version=\"1.0\" encoding=\"UTF-8\"?><cki><ck fm=\"00\" to=\"お問い合わせ先について\" num=\"19\"/></cki>";

@@ -1,0 +1,671 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>05</title>
+
+ <link rel="stylesheet" href="../kcm.css" type="text/css" />
+ <link rel="StyleSheet" href="../responsive_html5_!OverrideStyle!/Styles.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2019" />
+<script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../template/scripts/mhtopic.js"></script>
+<script type="text/javascript" src="../template/scripts/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../template/scripts/lightbox.min.js"></script>
+<script type="text/javascript" src="../template/scripts/custom.js"></script>
+<script type="text/javascript" src="../template/scripts/movie.js"></script>
+ <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css">
+ <link rel="stylesheet" type="text/css" href="../template/styles/lightbox.min.css">
+<script type="text/javascript" >
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "6";
+</script>
+ <meta name="brsprev" value="Topics/04.htm">
+ <meta name="brsnext" value="Topics/05-2.htm">
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+ <div dir="ltr">
+  
+  <h1 dir="ltr" class="FM_H1_Heading1">5.操作説明－タスク管理</h1>
+  
+  <h2 dir="ltr" class="FM_H2_Heading2"><a name="TOC_作業計画_作成_管理"></a><a name="XREF_80064"></a>作業計画を作成する（タスク管理）</h2>
+  <p dir="ltr" class="FM_BC_BodyContent">「タスク管理」タブでは、運搬する資材別にクレーンの構成や「玉掛け」から「玉外し」までの各工程におけるクレーンの姿勢などを１つのタスクとして登録することができます。タスクには「施行日」や「開始時間」、「終了時間」といった時間軸の情報を登録することもできます。タスク内の工程はクレーンの姿勢が変わる単位を１工程として登録することができるため、各姿勢における「負荷率」や「接地圧」などの安全に関する情報を一覧で確認することができます。</p>
+  <p dir="ltr" class="FM_BC_BodyContent">また、「タスク管理」タブは「クレーン操作」タブと連動しており、タスクおよび工程を追加するときは「クレーン操作」タブで検討した内容を反映することができます（「重さ（kg）」を除く）。</p>
+  <p dir="ltr" class="FM_PL_Caution"><span>表示される数値および形状は目安となり、実作業の安全性を保証するものではありません。現場の状況をよくご確認のうえ、余裕を持った作業計画を行ってください。 </span></p>
+  <h3 dir="ltr" class="FM_H3_Heading3"><a name="TOC__登録_新規追加"></a><a name="XREF_62655"></a>タスクを登録する（新規追加）</h3>
+  <p dir="ltr" class="FM_BC_BodyContent">「玉掛け」から「玉外し」までの工程を登録するためのタスクを登録します。タスクには運搬する資材や重さ、使用するクレーンの構成、施工日時などの情報を登録します。</p>
+  <p dir="ltr" class="FM_BC_BodyContent">登録できる項目は次の通りです。</p>
+ <div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table10" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr44">
+   <th class="td12">
+   <p dir="ltr" class="FM_TH_TableHeader">登録項目</p>
+</th>
+   <th class="td45">
+   <p dir="ltr" class="FM_TH_TableHeader">内容</p>
+</th>
+   <th class="td46">
+   <p dir="ltr" class="FM_TH_TableHeader">リスト編集<sup><span class="FM_Sup_Fullwidth">※</span></sup></p>
+</th>
+</tr>
+   <tr class="tr37">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">タスクNo.</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">タスクを登録するごとに割り当てられる「タスクNo.」が表示されます。「タスクNo.」はリスト内の上から順に連番となります。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+   <tr class="tr49">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">クレーンID</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「対象クレーン」で割り当てられている「ID」が表示されます。</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+   <tr class="tr51">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">ブーム長（m）</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブの「クレーン情報」エリアで選択した「ブーム長」が表示されます。</p>
+   <p dir="ltr" class="FM_TB_TableBulletLevel01">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>「ブーム長」は新規タスクダイアログの上部に表示されます。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+   <tr class="tr52">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">ジブ長（m）</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブの「クレーン情報」エリアで選択した「ジブ長」が表示されます。</p>
+   <p dir="ltr" class="FM_TB_TableBulletLevel01">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>「ジブ長」は新規タスクダイアログの上部に表示されます。</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+   <tr class="tr41">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">タスク名</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">新規タスクダイアログボックスで選択した「走行」および「揚重」のいずれかの項目が表示されます。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">資材名</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">新規タスクダイアログの「資材名」で入力した内容が表示されます。</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr53">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">資材座標XYZ</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">資材の座標が表示されます。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">フェーズ</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">新規タスクダイアログの「フェーズ」で入力した内容が表示されます。</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">吊荷直径（m）</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブの「吊荷の情報」エリアで入力した「吊荷直径」が表示されます。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr41">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">吊荷幅（m）</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブの「吊荷情報」エリアで入力した「吊荷幅」が表示されます。（吊り荷形状が角材の場合のみ入力可能。）</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr41">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">吊荷奥行き（m）</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブの「吊荷情報」エリアで入力した「吊荷奥行き」が表示されます。（吊り荷形状が角材の場合のみ入力可能。）</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr41">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">吊荷回転角（°）</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブの「吊荷情報」エリアで入力した「吊荷回転角」が表示されます。（吊り荷形状が角材の場合のみ入力可能。）</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">吊荷高さ（m）</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブの「吊荷情報」エリアで入力した「吊荷高さ」が表示されます。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">吊具高さ（m）</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブの「吊荷情報」エリアで入力した「吊具高さ」が表示されます。</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">吊荷重量（kg）</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブの「資材詳細」エリアで入力した「吊荷重量」が表示されます。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">資材数</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">新規タスクダイアログの「資材数」で入力した内容が表示されます。</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">吊具重量（kg）</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブの「資材詳細」エリアで入力した「吊具重量」が表示されます。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">フック重量（kg）</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブの「資材詳細」エリアで入力した「フック重量」が表示されます。</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">総荷重（kg）</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブの「資材詳細」エリアで入力した「総荷重」が表示されます。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">安全係数</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブの「資材詳細」エリアで入力した「安全係数」が表示されます。</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">接地圧（t/m2）</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブの「吊荷情報」エリアに出ている「接地圧」が表示されます。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">総時間</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「終了時間」－「開始時間」で計算された時間が表示されます。</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">開始日時</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">新規タスクダイアログの「開始日時」で入力した内容が表示されます。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">終了日時</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">新規タスクダイアログの「終了日時」で入力した内容が表示されます。</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">NW出力</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">選択することで、指定タスクのみ出力することができます。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+  </table>
+ </div>
+  <p dir="ltr" class="FM_BC_BodyContent_Kome">※<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span>「リスト編集」欄で「○」が付いている項目は、タスク一覧に表示されている項目をダブルクリックすることで編集することができます。</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Start"><span class="FM_StepNumber">1.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>対象のクレーンを選択（<a href="02-1.htm#XREF_86486">▶手順</a>）</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Content">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>あらかじめ「クレーン情報」エリアで使用するクレーンの構成を変更しておいてください。</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Ref">▶<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span><a href="02-2.htm#XREF_36099">『クレーンを操作する』</a></p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Continue"><span class="FM_StepNumber">2.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>「タスク管理」タブを表示（<a href="01-3.htm#XREF_85334">▶手順</a>）</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Continue"><span class="FM_StepNumber">3.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>［新規追加］をクリック</p>
+  <div dir="ltr" class="FM_FF_FigureFrame"><a href="../assets/task_39.png" data-lightbox="image182"><img alt="task_39.png" id="image182" src="../assets/task_39.png" style="max-width: 100% ;height: auto" /></a>&nbsp;
+  </div>
+  <p dir="ltr" class="FM_S1_StepLevel01_Content">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>新規タスクダイアログボックスが表示されます。</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Continue"><span class="FM_StepNumber">4.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>新規タスクダイアログボックスの各項目を設定および入力</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Content">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>「吊荷重量」、「吊具重量」は半角で入力してください。また、小数点第二位以下は四捨五入されます。 </p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Content">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>「資材数」、「安全係数」は半角整数で入力してください。</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Content">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>「施工日」は「年（西暦）/ 月/ (日)」を半角で入力してください。</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Content">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>「開始時間」および「終了時間」は「＊＊（時）:＊＊（分）」を半角で入力してください。</p>
+  <div dir="ltr" class="FM_FF_FigureFrame"><a href="../assets/task_40.png" data-lightbox="image183"><img alt="task_40.png" id="image183" src="../assets/task_40.png" style="max-width: 100% ;height: auto" /></a>&nbsp;
+  </div>
+  <p dir="ltr" class="FM_S1_StepLevel01_Continue"><span class="FM_StepNumber">5.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>新規タスクダイアログボックスの［OK］をクリック</p>
+  <div dir="ltr" class="FM_FF_FigureFrame"><a href="../assets/task_41.png" data-lightbox="image184"><img alt="task_41.png" id="image184" src="../assets/task_41.png" style="max-width: 100% ;height: auto" /></a>&nbsp;
+  </div>
+  <p dir="ltr" class="FM_S1_StepLevel01_Continue"><span class="FM_StepNumber">6.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>タスクが「タスク管理」タブのタスク一覧に登録されたことを確認</p>
+  <div dir="ltr" class="FM_FF_FigureFrame"><a href="../assets/task_42.png" data-lightbox="image185"><img alt="task_42.png" id="image185" src="../assets/task_42.png" style="max-width: 100% ;height: auto" /></a>&nbsp;
+  </div>
+  <h4 dir="ltr" class="FM_H4_Heading4"><a name="XREF_54692"></a>「フックの軌跡を表示」について </h4>
+  <p dir="ltr" class="FM_BC_BodyContent">タスク一覧で選択したタスクを選択し、［フックの軌跡を表示］をクリックするとタスクに登録されている全工程のフック位置をビュー画面に表示することができます。運搬する資材の経路を視覚的に確認できます。</p>
+  <p dir="ltr" class="FM_PL_Caution"><span>表示する場合は、あらかじめ「工程行選択時にその姿勢を反映する」を「<img alt="i-ckbox.png" id="image186" src="../assets/i-ckbox.png" style="max-width: 100% ;height: auto" />」にし、タスク内の工程を選択しておいてください。</span></p>
+  <p dir="ltr" class="FM_BC_BodyContent_Ref_ind2">▶<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_67426">『「工程行選択時にその姿勢を反映する」について』</a></p>
+  <p dir="ltr" class="FM_B1_BulletLevel01">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>工程を登録していない場合は表示することができません。</p>
+  <p dir="ltr" class="FM_BC_BodyContent_Ref_ind2">▶<span style="padding-left: 7pt;" class="FMAutoNumber_1"></span><a href="#XREF_62251">『工程を登録する（上に工程追加／下に工程追加）』</a></p>
+  <p dir="ltr" class="FM_B1_BulletLevel01">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>元に戻す場合は［フックの軌跡を非表示］をクリックしてください。</p>
+  <div dir="ltr" class="FM_FF_FigureFrame"><a href="../assets/task_43.png" data-lightbox="image187"><img alt="task_43.png" id="image187" src="../assets/task_43.png" style="max-width: 100% ;height: auto" /></a>&nbsp;
+  </div>
+  <p dir="ltr" class="FM_BC_BodyContent_Ex">【例】：「クレーン操作用3D」ビューで表示した場合</p>
+  <div dir="ltr" class="FM_FF_FigureFrame"><a href="../assets/task_06.png" data-lightbox="image188"><img alt="task_06.png" id="image188" src="../assets/task_06.png" style="max-width: 100% ;height: auto" /></a>&nbsp;
+  </div>
+  <h3 dir="ltr" class="FM_H3_Heading3"><a name="TOC__工程_自動生成"></a><a name="XREF_95547"></a>タスクおよび工程を自動生成する</h3>
+  <p dir="ltr" class="FM_BC_BodyContent">資材を選択状態で「単体指定」、「グループ指定」をクリックすると、選択資材に対するタスク工程を自動的に出力することができます。</p>
+  <p dir="ltr" class="FM_BC_BodyContent">登録済みのタスクを選択状態で「選択タスク」をクリックすると、同様にタスク工程を自動的に出力することができます。</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Start"><span class="FM_StepNumber">1.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>対象のクレーンを選択（<a href="02-1.htm#XREF_86486">▶手順</a>）</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Continue"><span class="FM_StepNumber">2.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>「タスク管理」タブを表示（<a href="01-3.htm#XREF_85334">▶手順</a>）</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Continue"><span class="FM_StepNumber">3.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>「タスク管理」の「タスクおよび工程の自動生成」をクリック</p>
+  <div dir="ltr" class="FM_FF_FigureFrame"><a href="../assets/task_76.png" data-lightbox="image189"><img alt="task_76.png" id="image189" src="../assets/task_76.png" style="max-width: 100% ;height: auto" /></a>&nbsp;
+  </div>
+  <p dir="ltr" class="FM_S1_StepLevel01_Content">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>タスクおよび工程の自動生成が表示されます。</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Continue"><span class="FM_StepNumber">4.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>資材を複数選択し、「グループ指定」をクリック</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Caution"><span>資材の選択が１つの場合は、「単体指定」を使用してください。</span></p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Caution"><span>玉掛け、玉外しは、必要に応じて指定をしてください。</span></p>
+  <div dir="ltr" class="FM_FF_FigureFrame"><a href="../assets/task_77.png" data-lightbox="image190"><img alt="task_77.png" id="image190" src="../assets/task_77.png" style="max-width: 100% ;height: auto" /></a>&nbsp;
+  </div>
+  <p dir="ltr" class="FM_S1_StepLevel01_Content">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>現在のクレーン姿勢が玉掛け姿勢として登録されます。</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Continue"><span class="FM_StepNumber">5.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>タスクや工程が「タスク管理」タブのタスク一覧、工程一覧に登録されたことを確認</p>
+  <div dir="ltr" class="FM_FF_FigureFrame"><a href="../assets/task_78.png" data-lightbox="image191"><img alt="task_78.png" id="image191" src="../assets/task_78.png" style="max-width: 100% ;height: auto" /></a>&nbsp;
+  </div>
+  <h3 dir="ltr" class="FM_H3_Heading3"><a name="TOC_工程_登録_上_工程追加_下_工程追加"></a><a name="XREF_62251"></a>工程を登録する（上に工程追加／下に工程追加）</h3>
+  <p dir="ltr" class="FM_BC_BodyContent">クレーンの姿勢が変わる単位を１工程として「玉掛け」から「玉外し」までの工程を登録することができます。また、各工程における「安全状態（負荷率）」や「接地圧」などの安全に関する情報を一覧で確認することができます。</p>
+  <p dir="ltr" class="FM_BC_BodyContent">登録できる項目は次の通りです。</p>
+  <p dir="ltr" class="FM_PL_Caution"><span>表示される数値は目安となり、実作業の安全性を保証するものではありません。現場の状況をよくご確認のうえ、余裕を持った作業計画を行ってください。</span></p>
+ <div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table10" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr44">
+   <th class="td12">
+   <p dir="ltr" class="FM_TH_TableHeader">登録項目</p>
+</th>
+   <th class="td45">
+   <p dir="ltr" class="FM_TH_TableHeader">内容</p>
+</th>
+   <th class="td46">
+   <p dir="ltr" class="FM_TH_TableHeader">リスト編集<sup><span class="FM_Sup_Fullwidth">※</span></sup></p>
+</th>
+</tr>
+   <tr class="tr37">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">工程No.</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">工程を登録するごとに割り当てられる「工程No.」が表示されます。「工程No.」はリスト内の上から順に連番となります。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+   <tr class="tr54">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">エラー情報</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">エラーを示すアイコンが表示されます。</p>
+   <p dir="ltr" class="FM_TC_TableContent_Left">表示の条件は、クレーン制御DLLのエラーが有る場合、負荷率がクレーン設定情報で設定した制限値を超える場合、自立時接地圧以外の接地圧が許容接地圧を超える場合です。</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+   <tr class="tr55">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">安全状態（負荷率）</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">登録した工程の内容から負荷率を計算し、三色灯の色をアイコンで表示します。安全のため負荷率は100%未満となるようにしてください。90％以上で警告を示すエラーメッセージが表示され、100%以上になると過負荷状態を示すエラーメッセージが表示されます。</p>
+   <p dir="ltr" class="FM_TC_TableContent_Left"><img alt="i-iro_red.png" id="image192" src="../assets/i-iro_red.png" style="max-width: 100% ;height: auto" />（赤）： 100.0％以上</p>
+   <p dir="ltr" class="FM_TC_TableContent_Left"><img alt="i-iro_yrw.png" id="image193" src="../assets/i-iro_yrw.png" style="max-width: 100% ;height: auto" />（黄）：90.0 〜99.9％</p>
+   <p dir="ltr" class="FM_TC_TableContent_Left"><img alt="i-iro_grn.png" id="image194" src="../assets/i-iro_grn.png" style="max-width: 100% ;height: auto" />（緑）：90.0％未満</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+   <tr class="tr41">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">工程種類</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">工程を登録した後で、工程の種類を設定します。「玉掛け」、「吊荷移動」、「玉外し」から選択することができます。</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr52">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">たわみ検討</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">工程を登録した後で、登録した工程がたわみを考慮したものとしたかどうかを示すことができます。「検討済み」、「未検討」から選択することができます。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr52">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">定格総荷重（t）</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">登録した工程の内容から現在のクレーンの構成および姿勢にて吊り上げることができる最大荷重（吊具重量を含む）を計算し表示します。</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+   <tr class="tr56">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">負荷率（％）</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">登録した工程の内容から定格総荷重に対する吊荷荷重の割合を計算し表示します。安全のため負荷率は100%未満となるようにしてください。90％以上で警告を示すエラーメッセージが表示され、100%以上になると過負荷状態を示すエラーメッセージが表示されます。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">接地圧（t/m2）</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">登録した工程の内容から地盤に作用する荷重を計算し表示します。</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">旋回角度（°）</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブで設定したクレーンの「旋回角度」が表示されます。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">作業半径（m）</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブで設定したクレーンの「作業半径」が表示されます。</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">フック揚程（m）</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブで設定したクレーンの「揚程」が表示されます。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr37">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">作業時間</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">登録した工程の作業時間の目安を入力することができます。工程登録時は「00:10:00」が入力されています。</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">フック座標XY</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブで設定したフックの平面座標が表示されます。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+   <tr class="tr53">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">本体座標：X</p>
+</td>
+   <td class="td7" rowspan="3">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブで設定したクレーン本体の位置座標が表示されます。</p>
+</td>
+   <td class="td50" rowspan="3">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr53">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">本体座標：Y</p>
+</td>
+</tr>
+   <tr class="tr53">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">本体座標：Z</p>
+</td>
+</tr>
+   <tr class="tr36">
+   <td class="td15">
+   <p dir="ltr" class="FM_TC_TableContent_Left">回転角（°）</p>
+</td>
+   <td class="td47">
+   <p dir="ltr" class="FM_TC_TableContent_Left">「クレーン操作」タブで設定したクレーンの「本体回転角」が表示されます。</p>
+</td>
+   <td class="td48">
+   <p dir="ltr" class="FM_TC_TableContent_Center">○</p>
+</td>
+</tr>
+   <tr class="tr49">
+   <td class="td17">
+   <p dir="ltr" class="FM_TC_TableContent_Left">P/W判定</p>
+</td>
+   <td class="td7">
+   <p dir="ltr" class="FM_TC_TableContent_Left">パレットウエイト判定が問題がない場合 「-」が表示されます。</p>
+</td>
+   <td class="td50">
+   <p dir="ltr" class="FM_TC_TableContent_Center">✕</p>
+</td>
+</tr>
+  </table>
+ </div>
+  <p dir="ltr" class="FM_BC_BodyContent_Kome">※<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span>「リスト編集」欄で「○」が付いている項目は、工程一覧に表示されている項目をダブルクリックすることで編集することができます。</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Start"><span class="FM_StepNumber">1.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>対象のクレーンを選択（<a href="02-1.htm#XREF_86486">▶手順</a>）</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Continue"><span class="FM_StepNumber">2.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>「タスク管理」タブを表示（<a href="01-3.htm#XREF_85334">▶手順</a>）</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Continue"><span class="FM_StepNumber">3.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>タスク一覧から、工程を登録するタスクをクリック</p>
+  <div dir="ltr" class="FM_FF_FigureFrame"><a href="../assets/task_44.png" data-lightbox="image195"><img alt="task_44.png" id="image195" src="../assets/task_44.png" style="max-width: 100% ;height: auto" /></a>&nbsp;
+  </div>
+  <p dir="ltr" class="FM_S1_StepLevel01_Continue"><span class="FM_StepNumber">4.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>［上に工程追加］／［下に工程追加］をクリック</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Content">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>あらかじめ「クレーン操作」タブで登録するクレーンの姿勢へ変更しておいてください。</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Content">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>新規で登録する場合は、［上に工程追加］と［下に工程追加］のどちらをクリックしても同様の動作となります。工程を追加で登録する場合、登録済みの工程を選択して［上に工程追加］をクリックすると選択した工程の上の行に追加され、［下に工程追加］をクリックすると下の行に追加されます。</p>
+  <div dir="ltr" class="FM_FF_FigureFrame"><a href="../assets/task_45.png" data-lightbox="image196"><img alt="task_45.png" id="image196" src="../assets/task_45.png" style="max-width: 100% ;height: auto" /></a>&nbsp;
+  </div>
+  <p dir="ltr" class="FM_S1_StepLevel01_Continue"><span class="FM_StepNumber">5.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>工程が「タスク管理」タブの工程一覧に登録されたことを確認</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Content">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>以降手順４～５を繰り返しタスクで行う「玉掛け」から「玉外し」までのクレーンの姿勢を工程として登録してください。</p>
+  <div dir="ltr" class="FM_FF_FigureFrame"><a href="../assets/task_46.png" data-lightbox="image197"><img alt="task_46.png" id="image197" src="../assets/task_46.png" style="max-width: 100% ;height: auto" /></a>&nbsp;
+  </div>
+  <h4 dir="ltr" class="FM_H4_Heading4"><a name="XREF_67426"></a>「工程行選択時にその姿勢を反映する」について</h4>
+  <p dir="ltr" class="FM_BC_BodyContent">工程一覧に登録した工程を選択したときに、登録した内容を「クレーン操作」タブおよびビュー画面に反映する場合は「<img alt="i-ckbox_non.png" id="image198" src="../assets/i-ckbox_non.png" style="max-width: 100% ;height: auto" />」をクリックし、「<img alt="i-ckbox.png" id="image199" src="../assets/i-ckbox.png" style="max-width: 100% ;height: auto" />」にしてください。工程一覧内の編集や確認を行う場合などクレーンの姿勢を反映したくないときにご利用ください。</p>
+  <p dir="ltr" class="FM_PL_Caution"><span>「<img alt="i-ckbox.png" id="image200" src="../assets/i-ckbox.png" style="max-width: 100% ;height: auto" />」にした場合、「クレーン操作」タブの内容が上書きされますのでご注意ください。</span></p>
+  <div dir="ltr" class="FM_FF_FigureFrame"><a href="../assets/task_47.png" data-lightbox="image201"><img alt="task_47.png" id="image201" src="../assets/task_47.png" style="max-width: 100% ;height: auto" /></a>&nbsp;
+  </div>
+  <h3 dir="ltr" class="FM_H3_Heading3"><a name="TOC__工程_保存_保存"></a><a name="XREF_91830"></a>タスクと工程を保存する（保存）</h3>
+  <p dir="ltr" class="FM_BC_BodyContent">登録したタスクと工程をRevit<sup><span class="FM_Sup">®</span></sup>プロジェクトファイルの保存先にあるデータベースファイル（”プロジェクトファイル名”.sdb）に保存することができます。</p>
+  <p dir="ltr" class="FM_B1_BulletLevel01">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>sdbファイルは以下のパスに作成されます。<br />[MyDocuments]¥K-D2 Planner¥[Revitのバージョン名]¥sdb¥</p>
+  <p dir="ltr" class="FM_BC_BodyContent_Ex">【例】：C:¥Users¥KobelcoTaro¥Documents¥K-D2 Planner¥2020¥sdb¥</p>
+  <p dir="ltr" class="FM_PL_Caution"><span>次の手順でタスクと工程を保存した後は、タスクおよび工程を登録したクレーンを保存するため必ずRevit<sup><span class="FM_Sup">®</span></sup>プロジェクトファイルも保存してください。</span></p>
+  <p dir="ltr" class="FM_PL_Caution"><span>クレーンを削除してRevit<sup><span class="FM_Sup">®</span></sup>プロジェクトファイルを保存すると、登録したタスクや工程は復元できませんのでご注意ください。</span></p>
+  <p dir="ltr" class="FM_B1_BulletLevel01">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>「対象クレーン」エリアの一覧に登録されているすべてのクレーンのタスクと工程が保存されます。</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Start"><span class="FM_StepNumber">1.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>「タスク管理」タブを表示（<a href="01-3.htm#XREF_85334">▶手順</a>）</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Continue"><span class="FM_StepNumber">2.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>「タスク管理」タブの［保存］をクリック</p>
+  <div dir="ltr" class="FM_FF_FigureFrame"><a href="../assets/task_48.png" data-lightbox="image202"><img alt="task_48.png" id="image202" src="../assets/task_48.png" style="max-width: 100% ;height: auto" /></a>&nbsp;
+  </div>
+  <p dir="ltr" class="FM_S1_StepLevel01_Content">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>保存したことを確認するためのダイアログボックスが表示されます。</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Continue"><span class="FM_StepNumber">3.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>ダイアログボックスの［OK］をクリック</p>
+  <div dir="ltr" class="FM_FF_FigureFrame"><a href="../assets/task_49.png" data-lightbox="image203"><img alt="task_49.png" id="image203" src="../assets/task_49.png" style="max-width: 100% ;height: auto" /></a>&nbsp;
+  </div>
+  <p dir="ltr" class="FM_S1_StepLevel01_Continue"><span class="FM_StepNumber">4.<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span></span>Revit<sup><span class="FM_Sup">®</span></sup>プロジェクトファイルを保存</p>
+  <p dir="ltr" class="FM_S1_StepLevel01_Content">•<span style="padding-left: 2pt;" class="FMAutoNumber_1"></span>タスクおよび工程を登録したクレーンを保存します。</p>
+  </div>
+</body>
+</html>

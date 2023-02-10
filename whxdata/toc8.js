@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc.js\"  name=\"3. 操作説明－案件情報\" url=\"Topics/03.htm\"><item name=\"案件を登録する（案件情報）\" url=\"Topics/03.htm#TOC_案件_登録_案件情報bc-1\" /></data>";
